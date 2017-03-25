@@ -40,5 +40,4 @@ public class DeveloperProperties {
         Developer pedro = Karumies.PEDRO;
         assertThat(pedro.getNumberOfMaxibonsToGrab(), is(3));
     }
-
 }
