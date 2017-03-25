@@ -18,7 +18,8 @@ public class KarumiHQTest {
     public static KarumiHQs hQs = new KarumiHQs();
 
     @Property
-    public void karumiHQAlwaysMustHaveMoreThanTwo(@From(KarumiesGenerator.class) Developer developer) {
+    public void karumiHQAlwaysMustHaveMoreThanTwo(
+            @From(KarumiesGenerator.class) Developer developer) {
         //System.out.println(developer);
 
         hQs.openFridge(developer);
@@ -27,7 +28,8 @@ public class KarumiHQTest {
     }
 
     @Property
-    public void karumiHQAlwaysMustHaveMoreThanTwoWithStrangePeaple(@From(DevelopersGenerator.class) Developer developer) {
+    public void karumiHQAlwaysMustHaveMoreThanTwoWithStrangePeaple(
+            @From(DevelopersGenerator.class) Developer developer) {
         System.out.println(developer);
 
         hQs.openFridge(developer);

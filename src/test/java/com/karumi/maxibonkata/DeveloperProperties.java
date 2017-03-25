@@ -21,8 +21,9 @@ public class DeveloperProperties {
 
     private static final String FAKE_NAME = "String";
 
-    @Property public void theNumberOfMaxiAreAlwaysPositiveOrZero(int numOfMaxi) {
-        System.out.println("num of maxi generated ="+numOfMaxi);
+    @Property
+    public void theNumberOfMaxiAreAlwaysPositiveOrZero(int numOfMaxi) {
+        System.out.println("num of maxi generated =" + numOfMaxi);
         Developer developer = new Developer(FAKE_NAME, numOfMaxi);
         System.out.println(developer);
         assertTrue(developer.getNumberOfMaxibonsToGrab() >= 0);
